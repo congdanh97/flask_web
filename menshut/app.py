@@ -376,12 +376,12 @@ def tshirt():
                          (pid, name, mobile, order_place, quantity, now_time))
         # Commit cursor
         mysql.connection.commit()
-
         # Close Connection
         cur.close()
-
-        flash('Order successful', 'success')
+        flash('Quý khách đặt đơn hàng thành công', 'danger')
+        #post data in form to db thanh cong
         return render_template('tshirt.html', tshirt=products, form=form)
+
     if 'view' in request.args:
         product_id = request.args['view'] #lay ra id dang vd: '5'
         curso = mysql.connection.cursor()
@@ -405,7 +405,8 @@ def tshirt():
             else:
                 cur.execute("INSERT INTO product_view(user_id, product_id) VALUES(%s, %s)", (uid, product_id))
                 mysql.connection.commit()
-        return render_template('view_product.html', x=x, tshirts=product)
+        return render_template('1product_detail.html', x=x, tshirts=product)
+        # return render_template('view_product.html', x=x, tshirts=product)
     elif 'order' in request.args:
         product_id = request.args['order']
         curso = mysql.connection.cursor()
@@ -413,7 +414,9 @@ def tshirt():
         product = curso.fetchall()
         x = content_based_filtering(product_id)
         return render_template('order_product.html', x=x, tshirts=product, form=form)
-    return render_template('tshirt.html', tshirt=products, form=form)
+    #post vao db khong thanh cong return
+    flash('Có lỗi xảy ra khi lưu đơn hàng! Quý khách vui lòng đặt lại sản phẩm hoặc liên hệ chúng tôi!', 'danger')
+    return render_template('1products.html', tshirt=products, form=form)
 
 
 @app.route('/wallet', methods=['GET', 'POST'])

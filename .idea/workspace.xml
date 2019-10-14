@@ -6,6 +6,8 @@
       <change afterPath="$PROJECT_DIR$/menshut/.idea/dbnavigator.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/menshut/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/menshut/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menshut/static/btn_submit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menshut/static/btn_submit_orange.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/menshut/templates/1cart.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/menshut/templates/1checkout.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/menshut/templates/1contact.html" afterDir="false" />
@@ -16,6 +18,7 @@
       <change afterPath="$PROJECT_DIR$/menshut/templates/1register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menshut/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/menshut/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menshut/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/menshut/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menshut/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/menshut/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menshut/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/menshut/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menshut/templates/view_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/menshut/templates/view_product.html" afterDir="false" />
     </list>
@@ -31,11 +34,13 @@
   <component name="ProjectId" id="1Qy5iYo3WyUarUshwgkrx2u2KKj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../abc" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\flask_wen_ecommere\menshut\static" />
+      <recent name="C:\Users\admin\Desktop\flask_wen_ecommere\menshut\static\css" />
       <recent name="C:\Users\admin\Desktop\flask_wen_ecommere\menshut\templates" />
     </key>
   </component>
